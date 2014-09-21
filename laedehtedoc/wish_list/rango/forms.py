@@ -15,7 +15,7 @@ class CategoryForm(forms.ModelForm):
 
 class PageForm(forms.ModelForm):
     title = forms.CharField(max_length=128, help_text="Please enter the Online Source:")
-    url = forms.CharField(max_length=300, help_text="Please key in More Details :", widget=forms.widgets.Textarea(attrs={'class': 'categoryText'}))
+    url = forms.CharField(max_length=300, help_text="Please add url :", widget=forms.widgets.Textarea(attrs={'class': 'categoryText'}))
     # url = forms.CharField(max_length=300, help_text="Please enter the Details of the Menu Item:")    
     views = forms.IntegerField(widget=forms.HiddenInput(), initial=0)
     mylikes = forms.IntegerField(widget=forms.HiddenInput(), initial=0)    

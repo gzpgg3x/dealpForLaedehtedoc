@@ -1,17 +1,17 @@
 {% extends "rango/base.html" %}
 
-{% block title %}Register at appName {% endblock %}
+{% block title %}Register at Dealp {% endblock %}
 
 {% block body_block %}
 <div class="hero-unit">
-    <h1>Register at appName</h1>
+    <h1>Register at Dealp</h1>
     <br/>
 
     <div class="container">
         {% if registered %}
         <p> Thank you for registering.
 
-        <p><a href="/rango/login/">Login</a> when you are ready to use appName</p>
+        <p><a href="/rango/login/">Login</a> when you are ready to use Dealp</p>
         {% else %}
 
         <form class="form-signin span8" id="user_form" method="post" action="/rango/register/"
